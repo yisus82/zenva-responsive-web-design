@@ -12,6 +12,65 @@ html {
   font-size: 16px;
 }
 
+body {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Oswald', sans-serif;
+}
+
+#hero {
+  align-content: center;
+  background-color: grey;
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 600px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px #000;
+}
+
+#hero h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px #000;
+}
+
+#hero a.btn {
+  color: white;
+  background-color: #131633;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 1rem auto;
+  opacity: 1;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 25%;
+}
+
+#hero a.btn:hover {
+  background-color: #2196f3;
+}
+
 footer {
   align-items: center;
   background: linear-gradient(to bottom, #284e7a, #000 100%);
@@ -47,6 +106,19 @@ footer ul li a {
 }
 
 @media (max-width: 800px) {
+  #hero h1 {
+    font-size: 36px;
+  }
+
+  #hero h3 {
+    font-size: 18px;
+  }
+
+  #hero a.btn {
+    padding: 0.5rem;
+    width: 40%;
+  }
+
   footer {
     padding: 80px 15px;
   }

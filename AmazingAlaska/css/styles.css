@@ -173,6 +173,40 @@ hr {
   background-image: url('../img/clouds.jpg');
 }
 
+#getting-around {
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+#getting-around p {
+  margin-bottom: 20px;
+}
+
+#getting-around ul {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#getting-around li {
+  list-style-type: none;
+  margin: 1rem;
+}
+
+#getting-around li h4 {
+  color: #555;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.icon {
+  color: #2196f3;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
 footer {
   align-items: center;
   background: linear-gradient(to bottom, #284e7a, #000 100%);
@@ -240,6 +274,10 @@ footer ul li a {
 
   #gallery .grid li.large {
     flex-basis: 100%;
+  }
+
+  #getting-around ul {
+    flex-direction: column;
   }
 
   footer {

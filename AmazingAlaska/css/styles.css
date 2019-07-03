@@ -71,6 +71,50 @@ h6 {
   background-color: #2196f3;
 }
 
+#about {
+  align-items: center;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#about .title {
+  color: #131633;
+  font-size: 32px;
+  margin-bottom: 35px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#two-cols {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-img img {
+  border: 4px solid #2196f3;
+}
+
+.about-bio {
+  line-height: 2;
+  margin-left: 20px;
+  max-width: 800px;
+  width: 65%;
+}
+
+hr {
+  background-color: #2196f3;
+  border: 0;
+  height: 2px;
+  margin: 40px auto;
+  width: 150px;
+}
+
 footer {
   align-items: center;
   background: linear-gradient(to bottom, #284e7a, #000 100%);
@@ -117,6 +161,15 @@ footer ul li a {
   #hero a.btn {
     padding: 0.5rem;
     width: 40%;
+  }
+
+  #two-cols {
+    flex-direction: column;
+  }
+
+  .about-bio {
+    line-height: 1.5;
+    margin-top: 20px;
   }
 
   footer {

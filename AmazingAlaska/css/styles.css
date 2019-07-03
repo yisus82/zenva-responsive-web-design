@@ -81,7 +81,7 @@ h6 {
   padding: 10px;
 }
 
-#about .title {
+.title {
   color: #131633;
   font-size: 32px;
   margin-bottom: 35px;
@@ -113,6 +113,64 @@ hr {
   height: 2px;
   margin: 40px auto;
   width: 150px;
+}
+
+#gallery {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#gallery p {
+  line-height: 2;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+  width: 65%;
+}
+
+#gallery .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+#gallery .grid li {
+  background-clip: content-box;
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  height: 350px;
+  list-style-type: none;
+  margin: 1rem;
+}
+
+#gallery .grid li.small {
+  flex-basis: 35%;
+}
+
+#gallery .grid li.large {
+  flex-basis: 60%;
+}
+
+#gallery-img1 {
+  background-image: url('../img/alaska-wilderness-sky-aurora-borealis.jpg');
+}
+
+#gallery-img2 {
+  background-image: url('../img/glacier.jpg');
+}
+
+#gallery-img3 {
+  background-image: url('../img/alaska-glacier-ice-mountains.jpg');
+}
+
+#gallery-img4 {
+  background-image: url('../img/clouds.jpg');
 }
 
 footer {
@@ -170,6 +228,18 @@ footer ul li a {
   .about-bio {
     line-height: 1.5;
     margin-top: 20px;
+  }
+
+  #gallery p {
+    line-height: 1.5;
+  }
+
+  #gallery .grid li.small {
+    flex-basis: 100%;
+  }
+
+  #gallery .grid li.large {
+    flex-basis: 100%;
   }
 
   footer {

@@ -239,6 +239,22 @@ hr {
   margin-bottom: 0;
 }
 
+section.flexbox-section {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+section.flexbox-section p {
+  line-height: 1.5;
+  margin-bottom: 35px;
+  max-width: 900px;
+  padding: 0 20px;
+  text-align: center;
+}
+
 footer {
   align-items: center;
   background: linear-gradient(to bottom, #284e7a, #000 100%);

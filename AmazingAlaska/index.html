@@ -8,7 +8,9 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/js/all.min.js"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Amazing Alaska</title>
   </head>
@@ -19,7 +21,6 @@
       </h2>
       <nav>
         <ul>
-          <li><a href="#top">Top</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#getting-around">Travel</a></li>
@@ -181,5 +182,33 @@
         &mdash;Benjamin Franklin
       </p>
     </footer>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('a[href^="#"]').on('click', function(e) {
+          e.preventDefault();
+
+          var target = this.hash;
+
+          if (!target) {
+            target = '#top';
+          }
+
+          var offset = $(target).offset().top - 150;
+
+          $('html, body')
+            .stop()
+            .animate(
+              {
+                scrollTop: offset
+              },
+              900,
+              'swing',
+              function() {
+                window.location.hash = offset;
+              }
+            );
+        });
+      });
+    </script>
   </body>
 </html>

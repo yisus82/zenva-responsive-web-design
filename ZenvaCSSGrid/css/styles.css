@@ -1,0 +1,165 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #131633;
+  color: #34495e;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  grid-area: header;
+}
+
+header h1 {
+  color: white;
+  font-size: 3.25em;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px #22638e;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.options {
+  align-items: center;
+  background-color: white;
+  border-radius: 3px;
+  border-top: 3px solid #3498db;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.options-link {
+  color: #3498db;
+  font-size: 0.9em;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.options-link:hover {
+  color: darkgreen;
+  text-decoration: underline;
+}
+
+.card {
+  background-color: white;
+}
+
+.card-blue {
+  background-color: #9ebcf5;
+}
+
+.card-title {
+  background-color: #4f97d5;
+  color: white;
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+#login {
+  grid-area: login;
+}
+
+#enhance_your_career {
+  grid-area: enhance_your_career;
+}
+
+#important_stats {
+  grid-area: important_stats;
+}
+
+#build_apps {
+  grid-area: build_apps;
+}
+
+#build_games {
+  grid-area: build_games;
+}
+
+#build_websites {
+  grid-area: build_websites;
+}
+
+footer {
+  grid-area: footer;
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 1100px) {
+  main {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 4vh 38vh 38vh 10vh;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 90%;
+  }
+
+  #container {
+    grid-template-areas:
+      'header header header'
+      'nav nav nav'
+      'login enhance_your_career important_stats'
+      'build_apps build_games build_websites'
+      'footer footer footer';
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 5vh 25vh 25vh 25vh 10vh;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 90%;
+  }
+
+  #container {
+    grid-template-areas:
+      'header header'
+      'nav nav'
+      'login enhance_your_career'
+      'important_stats build_apps'
+      'build_games build_websites'
+      'footer footer';
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 10vh 12vh 12vh 12vh 12vh 12vh 12vh 8vh;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 90%;
+  }
+
+  #container {
+    grid-template-areas:
+      'header'
+      'nav'
+      'login'
+      'enhance_your_career'
+      'important_stats'
+      'build_apps'
+      'build_games'
+      'build_websites'
+      'footer';
+  }
+}

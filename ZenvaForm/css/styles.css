@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(90deg, cadetblue, #5085a0);
+  background-color: cadetblue;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+#divwrapper,
+fieldset {
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin: 0 auto 10px;
+  max-width: 900px;
+  min-height: 100px;
+  padding: 2%;
+}
+
+#formwrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#leftColumn {
+  padding: 1%;
+  width: 50%;
+}
+
+#rightColumn {
+  padding: 1%;
+  width: 50%;
+}
+
+#rightColumn fieldset p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer {
+  text-align: center;
+}
+
+.btn {
+  background: #3498db;
+  background-image: linear-gradient(#3498db, #2980b9);
+  border-radius: 28px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: linear-gradient(#3cb0fd, #3498db);
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  resize: none;
+  width: 90%;
+}
+
+@media (max-width: 900px) {
+  #formwrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  #leftColumn {
+    min-height: 100px;
+    padding: 0;
+    width: 100%;
+  }
+
+  #rightColumn {
+    min-height: 100px;
+    padding: 0;
+    width: 100%;
+  }
+}

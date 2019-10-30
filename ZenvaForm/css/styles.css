@@ -10,7 +10,7 @@ fieldset {
   border-radius: 10px;
   margin: 0 auto 10px;
   max-width: 900px;
-  min-height: 100px;
+  min-height: 200px;
   padding: 2%;
 }
 
@@ -62,11 +62,21 @@ textarea {
   width: 90%;
 }
 
+#login_form {
+  display: flex;
+  flex-direction: row;
+}
+
+#login_form p:last-child {
+  margin-left: 4px;
+}
+
 @media (max-width: 900px) {
   #formwrapper {
     display: flex;
     flex-direction: column;
   }
+
   #leftColumn {
     min-height: 100px;
     padding: 0;
@@ -77,5 +87,17 @@ textarea {
     min-height: 100px;
     padding: 0;
     width: 100%;
+  }
+
+  #login_form {
+    flex-direction: column;
+  }
+
+  #login_form p {
+    margin-top: 0px;
+  }
+
+  #login_form p:last-child {
+    margin-left: 0px;
   }
 }
